@@ -1,0 +1,1 @@
+if [ ! -f /data/ssl/server.key ] && [ ! -f /data/ssl/server.crt ]; then  openssl req -subj '/CN=./O=.' -new -newkey rsa:2048 -days 3650 -nodes -x509 -keyout /data/ssl/server.key -out /data/ssl/server.crt; fi
