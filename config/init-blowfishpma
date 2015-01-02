@@ -1,0 +1,1 @@
+sed -ri "s/cfg\['blowfish_secret'\] = ''/cfg['blowfish_secret'] = '`pwgen 32 1`'/" /data/http/config.inc.php
